@@ -9,6 +9,7 @@ print(type(MILES_PER_KM))
 miles_to_mars = distances_to_mars * MILES_PER_KM
 hours_to_mars = miles_to_mars / shuttle_speed_mph 
 days_to_mars = hours_to_mars / 24
+"Determination will take ___ days to reach Mars" 
 
 
 # Code your solution to exercise 5 here
