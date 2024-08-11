@@ -15,4 +15,4 @@ print(shuttle_name + " will take " + str(days_to_mars) + " days to reach Mars.")
 miles_to_moon = distance_to_moon_km * MILES_PER_KM
 hours_to_moon = miles_to_moon / shuttle_speed_mph
 days_to_moon = hours_to_moon / 24
-print(shuttle_name + "will take" + str(days_to_moon) + "days to reach the moon")
+print(shuttle_name + " will take" + str(days_to_moon) + " days to reach the moon")
