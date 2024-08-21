@@ -12,11 +12,16 @@ while fuel_level <= 5000 or fuel_level > 30000:
 # b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
 while num_astronauts <= 0 or num_astronauts > 7:
     num_astronauts = int(input("Enter the number of astronauts: "))
+if num_astronauts < 7:
+    print("Less than 7 astronauts")
   
 # c. Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration, decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by 50 kilometers.
-
-
-
+while fuel_level <= 5000 or fuel_level > 30000:
+    fuel_level += decrease_by(100*num_astronauts)
+    altitude += increase_by(50*num_astronauts)
+if fuel_level > 6000:
+    print("Fuel level greater than 6000")
+  
 # Exercise #2: Print the result with the phrase, The shuttle gained an altitude of ___ km and has ___ kg of fuel left. Fill in the blanks with the altitude and fuel level values.
 
 # If the altitude is 2000 km or higher, add “Orbit achieved!” Otherwise add, “Failed to reach orbit.”
