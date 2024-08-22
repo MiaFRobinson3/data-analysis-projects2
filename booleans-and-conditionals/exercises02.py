@@ -30,5 +30,9 @@ else:
     print("Stable speed")
 
 # 4) PREDICT: Do the code blocks shown in the Section D produce the same result?
+<<<<<<< HEAD
 print("Yes.")
+=======
+
+>>>>>>> upstream/main
 # print("Yes" or "No")

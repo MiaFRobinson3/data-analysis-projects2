@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Write your return_cost function here:
 def return_cost(menu, item):
   if item in menu:
@@ -12,29 +13,44 @@ def fanciest_flavor(menu):
       fanciest = flavor
       highest_cost = price
     return fanciest
+=======
+flavors = {
+  'chocolate' : 0.35,
+  'vanilla' : 0.35,
+  'strawberry' : 0.42,
+  'cookies and cream' : 0.45,
+  'mint chocolate chip' : 0.42,
+  'fudge chunk' : 0.45,
+  'saffron' : 2.25,
+  'garlic' : 0.05
+}
 
-def main():
-  flavors = {
-    'chocolate' : 0.35,
-    'vanilla' : 0.35,
-    'strawberry' : 0.42,
-    'cookies and cream' : 0.45,
-    'mint chocolate chip' : 0.42,
-    'fudge chunk' : 0.45,
-    'saffron' : 2.25,
-    'garlic' : 0.05
-  }
+## Set a variable called choice to the flavor you want to search for.
 
-  choice = 'vanilla'
-  price = return_cost(flavors, choice)
-  if price == 0:
-    print("Sorry, we don't have {0}.".format(choice))
-  else:
-    print(f"The price for {choice} is ${price} per scoop.")
+## Use an if statement to check if choice is in the flavors dictionary.
+>>>>>>> upstream/main
 
+## If it is, set another variable called cost to the value associated with choice.
+
+## If it isn’t, set cost to 0.
+
+<<<<<<< HEAD
 # Uncomment the lines below after you code your fanciest_flavor function.
   print('---')
   expensive_flavor = fanciest_flavor(flavors)
   print(f"The most expensive flavor we have is {expensive_flavor}.")
+=======
+## Print the cost.
+>>>>>>> upstream/main
 
-main()
+### Search a Dictionary Part 2:
+
+## Initialize two variables: highest_cost to 0 and fanciest to an empty string.
+
+## Loop through the flavors dictionary using a for loop.
+
+## For each flavor, check if its price is higher than highest_cost.
+
+## If it is, update fanciest to this flavor and highest_cost to its price.
+
+## After the loop, print the most expensive flavor.
