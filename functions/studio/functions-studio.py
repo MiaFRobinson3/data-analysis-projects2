@@ -43,8 +43,7 @@ def new_list(list_test1):
     
     return this_list
     print(this_list)
-
-
+    
 # b) Loop through the old list.
 # c) For each element in the old list, call reverse_characters to flip the characters or digits.
 # d) Add the reversed string (or number) to the list defined in part ‘a’.
